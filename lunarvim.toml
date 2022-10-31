@@ -1,0 +1,629 @@
+[information]
+name = "lunar"
+background = "dark"
+author = 'Christian Chiarulli <chrisatmachine@gmail.com>'
+
+[palette]
+fg = '#c0caf5'
+bg = '#1a1b26'
+bg_dark = '#16161e'
+bg_highlight = '#292e42'
+terminal_black = '#414868'
+fg_dark = '#a9b1d6'
+fg_gutter = '#3b4261'
+dark3 = '#545c7e'
+comment = '#565f89'
+dark5 = '#737aa2'
+blue0 = '#3d59a1'
+blue = '#7aa2f7'
+cyan = '#7dcfff'
+blue1 = '#2ac3de'
+blue2 = '#0db9d7'
+blue5 = '#89ddff'
+blue6 = '#b4f9f8'
+blue7 = '#394b70'
+magenta = '#bb9af7'
+magenta2 = '#ff007c'
+purple = '#9d7cd8'
+orange = '#ff9e64'
+yellow = '#e0af68'
+yellow2 = '#F1CA75'
+green = '#9ece6a'
+green1 = '#73daca'
+green2 = '#41a6b5'
+teal = '#1abc9c'
+red = '#f7768e'
+red1 = '#db4b4b'
+git_change = '#6183bb'
+git_add = '#449dab'
+git_delete = '#914c54'
+gitsigns_add = '#266d6a'
+gitsigns_change = '#536c9e'
+gitsigns_delete = '#b2555b'
+diff_add = '#41a6b5'         # colors.green2, 0.15
+diff_change = '#394b70'      # colors.blue7, 0.15
+diff_delete = '#db4b4b'      # colors.red1, 0.15
+diff_text = '#394b70'        # colors.blue7, 0.15
+gitignore = '#545c7e'
+border_highlight = '#3d59a1'
+bg_popup = '#16161e'
+bg_statusline = '#16161e'
+float_bg = '#16161e'
+bg_visual = '#2d59a1'        # util.darken(colors.blue0, 0.7)
+bg_search = '#3d59a1'
+fg_sidebar = '#a9b1d6'
+black = '#000000'            # util.darken(colors.bg, 0.8, "#000000")
+border = '#000000'           # util.darken(colors.bg, 0.8, "#000000")
+
+error = '#db4b4b'
+warning = '#e0af68'
+info = '#0db9d7' 
+hint = '#1abc9c'
+
+[Editor]
+Normal = 'fg bg'
+NormalNC = 'fg bg'
+NormalSB = 'fg bg_dark'
+
+Cursor = 'bg fg'
+lCursor = 'bg fg'
+CursorIM = 'bg fg'
+CursorLine = '- bg_highlight'
+CursorColumn = '- bg_highlight'
+TermCursor = 'bg fg'
+TermCursorNC = 'bg fg'
+
+LineNr = 'fg_gutter'
+CursorLineNr = 'dark5'
+
+DiffText = '- diff_text'
+DiffAdd = '- diff_add'
+DiffChange = '- diff_change'
+DiffDelete = '- diff_delete'
+
+Pmenu = 'fg bg_popup'
+PmenuSel = '- fg_gutter' # TODO
+PmenuSbar = '- bg_popup' # TODO
+PmenuThumb = '- fg_gutter'
+WildMenu = '- bg_visual b'
+
+MsgArea = 'fg_dark'
+ModeMsg = 'fg_dark - b'
+MsgSeparator = 'fg bg'
+MoreMsg = 'blue'
+WarningMsg = 'warning'
+ErrorMsg = 'error bg b'
+
+# MatchWord = '- - -'
+MatchParen = 'orange - b'
+# MatchWordCur = '- - -'
+# MatchParenCur = '- - -'
+
+TabLine = 'fg_gutter bg_statusline'
+TabLineSel = 'black blue'
+TabLineFill = '- black'
+
+Search = 'fg bg_search'
+IncSearch = 'black orange'
+CurSearch = 'link:IncSearch'
+
+Visual = '- bg_visual'
+VisualNOS = '- bg_visual'
+
+Folded = 'blue fg_gutter'
+FoldColumn = 'comment bg'
+
+ColorColumn = '- black'
+SignColumn = 'fg_gutter bg'
+SignColumnSB = 'fg_gutter bg_dark'
+
+VertSplit = 'border'
+WinSeparator = 'border - b'
+
+NormalFloat = 'fg bg_dark'
+FloatBorder = 'border_highlight bg_dark'
+
+SpellBad = '- - c red1'
+SpellCap = '- - c yellow'
+SpellLocal = '- - c teal'
+SpellRare = '- - c blue2'
+
+QuickFixLine = '- bg_visual b'
+Directory = 'yellow'
+Question = 'blue'
+Conceal = 'dark5'
+SpecialKey = 'dark3 - b'
+Whitespace = 'fg_gutter'
+Substitute = 'black red'
+EndOfBuffer = 'bg'
+NonText = 'dark3'
+
+[Code]
+Comment = 'comment - i'
+Variable = 'fg'
+Identifier = 'magenta'
+String = 'green'
+Character = 'green'
+Number = 'orange'
+Float = 'orange'
+Boolean = 'orange'
+Constant = 'orange'
+Function = 'blue'
+Statement = 'magenta'
+Conditional = 'magenta'
+Repeat = 'magenta'
+Label = 'magenta'
+Operator = 'blue5'
+Keyword = 'purple'
+Exception = 'purple'
+PreProc = 'purple'
+Define = 'purple'
+Macro = 'purple'
+Include = 'purple'
+PreCondit = 'purple'
+Type = 'yellow2'
+StorageClass = 'blue1'
+Structure = 'blue1'
+Typedef = 'blue1'
+Special = 'blue1'
+SpecialChar = 'blue1'
+Tag = 'blue1'
+Delimiter = 'blue1'
+SpecialComment = 'blue1'
+Debug = 'blue1'
+Title = 'blue - b'
+# Ignore = '- - -'
+Todo = 'bg yellow b'
+Error = 'error - b'
+Bold = '- - b'
+Italic = '- - i'
+Underlined = '- - u'
+
+[Treesitter]
+# Misc
+'@comment' = 'link:Comment'
+'@none' = '- -'
+'@preproc' = 'link:PreProc'
+'@define' = 'link:Define'
+'@operator' = 'link:Operator'
+
+# Punctuation
+'@punctuation.delimeter' = 'link:Delimiter'
+'@punctuation.bracket' = 'fg_dark'
+'@punctuation.special' = 'link:Delimiter'
+
+# Literals
+'@string' = 'link:String'
+'@string.regex' = 'link:String'
+'@string.escape' = 'link:SpecialChar'
+'@string.special' = 'link:SpecialChar'
+
+'@character' = 'link:Character'
+'@character.special' = 'link:SpecialChar'
+
+'@boolean' = 'link:Boolean'
+'@number' = 'link:Number'
+'@float' = 'link:Float'
+
+# Functions
+'@function' = 'link:Function'
+'@function.builtin' = 'link:Special'
+'@function.call' = 'link:Function'
+'@function.macro' = 'link:Macro'
+
+'@method' = 'link:Function'
+'@method.call' = 'link:Function'
+
+'@constructor' = 'link:Special'
+'@parameter' = 'link:Identifier'
+
+# Keywords
+'@keyword' = 'link:Keyword'
+'@keyword.function' = 'link:Keyword'
+'@keyword.operator' = 'link:Keyword'
+'@keyword.return' = 'link:Keyword'
+
+'@conditional' = 'link:Conditional'
+'@repeat' = 'link:Repeat'
+'@debug' = 'link:Debug'
+'@label' = 'link:Label'
+'@include' = 'link:Include'
+'@exception' = 'link:Exception'
+
+# Types
+'@type' = 'link:Type'
+'@type.builtin' = 'link:Type'
+'@type.definition' = 'link:Typedef'
+'@type.qualifier' = 'link:Type'
+
+'@storageclass' = 'link:StorageClass'
+'@attribute' = 'link:PreProc'
+'@field' = 'link:Identifier'
+'@property' = 'link:Identifier'
+
+# Identifiers
+'@variable' = 'link:Variable'
+'@variable.builtin' = 'red'
+
+'@constant' = 'link:Constant'
+'@constant.builtin' = 'link:Special'
+'@constant.macro' = 'link:Define'
+
+'@namespace' = 'link:Include'
+'@symbol' = 'link:Identifier'
+
+# Text
+'@text' = 'link:None'
+'@text.strong' = 'link:Bold'
+'@text.emphasis' = 'link:Italic'
+'@text.underline' = 'link:Underlined'
+'@text.strike' = '- - s'
+'@text.title' = 'link:Title'
+'@text.literal' = 'link:String'
+'@text.uri' = 'link:Underlined'
+'@text.math' = 'link:Special'
+'@text.environment' = 'link:Macro'
+'@text.environment.name' = 'link:Type'
+'@text.reference' = 'link:Constant'
+
+'@text.todo' = 'link:Todo'
+'@text.note' = 'link:SpecialComment'
+'@text.warning' = 'link:Todo'
+'@text.danger' = 'link:WarningMsg'
+
+# '@text.diff.add' = 'warn'
+# '@text.diff.delete' = 'link:Error'
+
+# Tags
+'@tag' = 'link:Label'
+'@tag.attribute' = 'link:Identifier'
+'@tag.delimeter' = 'dark5'
+
+# Conceal
+# '@conceal' = 'link:Comment'
+
+# Spell
+# '@spell' = 'link:Error'
+
+# Non-standard
+# '@variable.global' = 'link:Identifier'
+ # markdownHeadingDelimiter = { fg = c.orange, bold = true },
+ #    markdownCode = { fg = c.teal },
+ #    markdownCodeBlock = { fg = c.teal },
+ #    markdownH1 = { fg = c.magenta, bold = true },
+ #    markdownH2 = { fg = c.blue, bold = true },
+ #    markdownLinkText = { fg = c.blue, underline = true },
+
+[markdown]
+markdownBlockquote = 'orange'
+markdownCode = 'teal'
+markdownCodeBlock = 'teal'
+markdownCodeDelimiter = 'teal'
+markdownH1 = 'link:Title'
+markdownH2 = 'link:Title'
+markdownH3 = 'link:Title'
+markdownH4 = 'link:Title'
+markdownH5 = 'link:Title'
+markdownH6 = 'link:Title'
+markdownHeadingDelimiter = 'orange - b'
+markdownHeadingRule = 'link:PreProc'
+markdownId = 'link:Type'
+markdownIdDeclaration = 'link:Typedef'
+markdownIdDelimiter = 'link:Delimiter'
+markdownLinkDelimiter = 'link:Delimiter'
+markdownBold = 'link:Bold'
+markdownItalic = 'link:Italic'
+markdownBoldItalic = 'yellow - bi'
+markdownListMarker = 'orange - b'
+markdownOrderedListMarker = 'orange - b'
+markdownRule = 'link:PreProc'
+markdownUrl = 'cyan - u'
+markdownLinkText = 'cyan - u'
+markdownFootnote = 'link:Typedef'
+markdownFootnoteDefinition = 'link:Typedef'
+markdownEscape = 'link:Special'
+'@text.literal.markdown_inline' = 'blue terminal_black'
+'@punctuation.special.markdown' = 'orange - b'
+
+[Whichkey]
+WhichKey = 'cyan'
+WhichKeySeperator = 'link:Comment'
+WhichKeyGroup = 'blue'
+WhichKeyDesc = 'magenta'
+WhichKeyFloat = '- bg_dark'
+WhichKeyValue = 'dark5'
+WhichKeyBorder = 'link:FloatBorder'
+
+[Git]
+GitSignsAdd = 'gitsigns_add'
+GitSignsChange = 'gitsigns_change'
+GitSignsDelete = 'gitsigns_delete'
+
+[LSP]
+DiagnosticHint = 'teal'
+DiagnosticInfo = 'blue2'
+DiagnosticWarn = 'yellow'
+DiagnosticError = 'red1'
+DiagnosticOther = 'purple'
+DiagnosticSignHint = 'link:DiagnosticHint'
+DiagnosticSignInfo = 'link:DiagnosticInfo'
+DiagnosticSignWarn = 'link:DiagnosticWarn'
+DiagnosticSignError = 'link:DiagnosticError'
+DiagnosticSignOther = 'link:DiagnosticOther'
+DiagnosticSignWarning = 'link:DiagnosticWarn'
+DiagnosticFloatingHint = 'link:DiagnosticHint'
+DiagnosticFloatingInfo = 'link:DiagnosticInfo'
+DiagnosticFloatingWarn = 'link:DiagnosticWarn'
+DiagnosticFloatingError = 'link:DiagnosticError'
+DiagnosticUnderlineHint = '- - c teal'
+DiagnosticUnderlineInfo = '- - c blue2'
+DiagnosticUnderlineWarn = '- - c yellow'
+DiagnosticUnderlineError = '- - c red1'
+DiagnosticSignInformation = 'link:DiagnosticInfo'
+DiagnosticVirtualTextHint = 'teal #1a2b32'
+DiagnosticVirtualTextInfo = 'blue2 #192b38'
+DiagnosticVirtualTextWarn = 'yellow #2e2a2d'
+DiagnosticVirtualTextError = 'red1 #2d202a'
+
+LspDiagnosticsError = 'link:DiagnosticError'
+LspDiagnosticsWarning = 'link:DiagnosticWarn'
+LspDiagnosticsInfo = 'link:DiagnosticInfo'
+LspDiagnosticsInformation = 'link:LspDiagnosticsInfo'
+LspDiagnosticsHint = 'link:DiagnosticHint'
+LspDiagnosticsDefaultError = 'link:LspDiagnosticsError'
+LspDiagnosticsDefaultWarning = 'link:LspDiagnosticsWarning'
+LspDiagnosticsDefaultInformation = 'link:LspDiagnosticsInfo'
+LspDiagnosticsDefaultInfo = 'link:LspDiagnosticsInfo'
+LspDiagnosticsDefaultHint = 'link:LspDiagnosticsHint'
+LspDiagnosticsVirtualTextError = 'link:DiagnosticVirtualTextError'
+LspDiagnosticsVirtualTextWarning = 'link:DiagnosticVirtualTextWarn'
+LspDiagnosticsVirtualTextInformation = 'link:DiagnosticVirtualTextInfo'
+LspDiagnosticsVirtualTextInfo = 'link:DiagnosticVirtualTextInfo'
+LspDiagnosticsVirtualTextHint = 'link:DiagnosticVirtualTextHint'
+LspDiagnosticsFloatingError = 'link:LspDiagnosticsError'
+LspDiagnosticsFloatingWarning = 'link:LspDiagnosticsWarning'
+LspDiagnosticsFloatingInformation = 'link:LspDiagnosticsInfo'
+LspDiagnosticsFloatingInfo = 'link:LspDiagnosticsInfo'
+LspDiagnosticsFloatingHint = 'link:LspDiagnosticsHint'
+LspDiagnosticsSignError = 'link:LspDiagnosticsError'
+LspDiagnosticsSignWarning = 'link:LspDiagnosticsWarning'
+LspDiagnosticsSignInformation = 'link:LspDiagnosticsInfo'
+LspDiagnosticsSignInfo = 'link:LspDiagnosticsInfo'
+LspDiagnosticsSignHint = 'link:LspDiagnosticsHint'
+
+NvimTreeLspDiagnosticsError = 'link:LspDiagnosticsError'
+NvimTreeLspDiagnosticsWarning = 'link:LspDiagnosticsWarning'
+NvimTreeLspDiagnosticsInformation = 'link:LspDiagnosticsInfo'
+NvimTreeLspDiagnosticsInfo = 'link:LspDiagnosticsInfo'
+NvimTreeLspDiagnosticsHint = 'link:LspDiagnosticsHint'
+
+LspDiagnosticsUnderlineError = 'link:DiagnosticUnderlineError'
+LspDiagnosticsUnderlineWarning = 'link:DiagnosticUnderlineWarn'
+LspDiagnosticsUnderlineInformation = 'link:DiagnosticUnderlineInfo'
+LspDiagnosticsUnderlineInfo = 'link:DiagnosticUnderlineInfo'
+LspDiagnosticsUnderlineHint = 'link:DiagnosticUnderlineHint'
+
+LspReferenceRead = '- fg_gutter'
+LspReferenceText = '- fg_gutter'
+LspReferenceWrite = '- fg_gutter'
+
+LspCodeLens = 'comment - i'
+LspCodeLensSeparator = 'comment - i'
+
+[Quickscope]
+QuickScopePrimary = '#ff00ff - b'
+QuickScopeSecondary = '#00ffff - b'
+
+[Eyeliner]
+EyelinerPrimary = '#ff00ff - b'
+EyelinerSecondary = '#00ffff - b'
+
+[Telescope]
+TelescopeSelection = 'link:Visual'
+TelescopeSelectionCaret = 'red bg_visual'
+TelescopeMatching = 'teal - bi'
+TelescopeBorder = 'link:FloatBorder'
+TelescopeNormal = 'fg bg_dark'
+TelescopePromptTitle = "orange"
+TelescopePromptPrefix = "magenta"
+TelescopeResultsTitle = "orange"
+TelescopePreviewTitle = "orange"
+TelescopePromptCounter = "red"
+TelescopePreviewHyphen = "red"
+
+[NvimTree]
+NvimTreeFolderIcon = 'link:Directory'
+NvimTreeIndentMarker = 'fg_gutter'
+NvimTreeNormal = 'fg_dark bg_dark'
+NvimTreeNormalNC = 'fg_dark bg_dark'
+NvimTreeVertSplit = 'fg_dark fg_dark'
+NvimTreeWinSeparator = 'bg_dark bg_dark'
+NvimTreeFolderName = 'blue'
+NvimTreeOpenedFolderName = 'blue - bi'
+NvimTreeEmptyFolderName = 'link:Comment'
+NvimTreeOpenedFile = '- bg_highlight'
+NvimTreeGitIgnored = 'link:Comment'
+NvimTreeImageFile = 'fg_dark'
+NvimTreeSpecialFile = 'purple - u'
+NvimTreeEndOfBuffer = 'bg_dark'
+NvimTreeCursorLine = 'link:CursorLine'
+NvimTreeGitStaged = 'gitsigns_add'
+NvimTreeGitNew = 'gitsigns_add'
+NvimTreeGitRenamed = 'gitsigns_add'
+NvimTreeGitDeleted = 'gitsigns_delete'
+NvimTreeGitMerge = 'gitsigns_change'
+NvimTreeGitDirty = 'gitsigns_change'
+NvimTreeSymlink = 'cyan'
+NvimTreeRootFolder = 'blue - b'
+NvimTreeExecFile = 'green - i'
+
+[Lir]
+LirFloatNormal = 'fg_dark bg_dark'
+LirDir = 'blue'
+LirSymLink = 'cyan'
+LirEmptyDirText = 'link:Comment'
+
+[Buffer]
+BufferCurrent = 'fg fg_gutter'
+BufferCurrentIndex = 'blue2 fg_gutter'
+BufferCurrentMod = 'yellow fg_gutter'
+BufferCurrentSign = 'blue2 fg_gutter'
+BufferCurrentTarget = 'red fg_gutter b'
+
+BufferVisible = 'fg bg_dark'
+BufferVisibleIndex = 'blue2 bg_dark'
+BufferVisibleMod = 'yellow bg_dark'
+BufferVisibleSign = 'blue2 bg_dark'
+BufferVisibleTarget = 'red bg_dark b'
+
+BufferInactive = 'dark5 bg_dark'
+BufferInactiveIndex = 'dark5 bg_dark'
+BufferInactiveMod = '#a58354 bg_dark'
+BufferInactiveSign = 'bg_visual bg_dark'
+BufferInactiveTarget = 'red bg_dark b'
+
+BufferTabpage = 'bg_visual bg_dark'
+BufferTabpages = '- bg_dark'
+
+BufferLineIndicatorSelected = 'gitsigns_change'
+
+[StatusLine]
+StatusLine = 'fg_sidebar bg_statusline'
+StatusLineNC = 'fg_gutter bg_statusline'
+
+[IndentBlankline]
+IndentBlanklineContextChar = 'dark5'
+IndentBlanklineContextStart = '- - u'
+IndentBlanklineChar = 'dark5'
+# IndentBlanklineSpaceCharBlankline = 'info'
+# IndentBlanklineSpaceChar = 'cyan_test'
+
+[Bookmarks]
+BookmarkSign = 'gitsigns_change'
+BookmarkAnnotationSign = 'yellow'
+BookmarkLine = 'link:Visual'
+BookmarkAnnotationLine = 'link:Visual'
+
+[Bqf]
+BqfPreviewBorder = 'link:FloatBorder'
+BqfPreviewRange = 'link:Visual'
+# BqfPreviewFloat = 'fg'
+# BqfPreviewCursor = ''
+# BqfSign = ''
+
+[Cmp]
+CmpItemAbbrDeprecated = 'fg_gutter - s'
+CmpItemAbbrMatch = 'blue1'
+CmpItemAbbrMatchFuzzy = 'teal'
+CmpDocumentation = 'fg bg_dark'
+CmpDocumentationBorder = 'bg_visual bg_dark'
+CmpItemAbbr = 'fg'
+CmpItemMenu = 'comment'
+CmpItemKindDefaultc = 'fg_dark'
+
+CmpItemKindFunction = 'blue'
+CmpItemKindMethod = 'blue'
+CmpItemKindConstructor = 'blue'
+CmpItemKindClass = 'orange'
+CmpItemKindEnum = 'orange'
+CmpItemKindEvent = 'orange'
+CmpItemKindInterface = 'orange'
+CmpItemKindStruct = 'orange'
+CmpItemKindVariable = 'magenta'
+CmpItemKindField = 'green1'
+CmpItemKindProperty = 'green1'
+CmpItemKindEnumMember = 'green1'
+CmpItemKindConstant = 'magenta'
+CmpItemKindKeyword = 'cyan'
+CmpItemKindModule = 'yellow'
+CmpItemKindValue = 'magenta'
+CmpItemKindUnit = 'orange'
+CmpItemKindText = 'fg'
+CmpItemKindSnippet = 'dark5'
+CmpItemKindFile = 'fg'
+CmpItemKindFolder = 'fg'
+CmpItemKindColor = 'fg'
+CmpItemKindReference = 'magenta'
+CmpItemKindOperator = 'green1'
+CmpItemKindTypeParameter = 'green1'
+
+[Navic]
+NavicIconsFile = 'fg'
+NavicIconsModule = 'yellow'
+NavicIconsNamespace = 'fg'
+NavicIconsPackage = 'fg'
+NavicIconsClass = 'orange'
+NavicIconsMethod = 'blue'
+NavicIconsProperty = 'green1'
+NavicIconsField = 'green1'
+NavicIconsConstructor = 'orange'
+NavicIconsEnum = 'orange'
+NavicIconsInterface = 'orange'
+NavicIconsFunction = 'blue'
+NavicIconsVariable = 'magenta'
+NavicIconsConstant = 'magenta'
+NavicIconsString = 'green'
+NavicIconsNumber = 'orange'
+NavicIconsBoolean = 'orange'
+NavicIconsArray = 'orange'
+NavicIconsObject = 'orange'
+NavicIconsKey = 'purple'
+NavicIconsKeyword = 'purple'
+NavicIconsNull = 'orange'
+NavicIconsEnumMember = 'green1'
+NavicIconsStruct = 'orange'
+NavicIconsEvent = 'orange'
+NavicIconsOperator = 'fg'
+NavicIconsTypeParameter = 'green1'
+NavicText = 'fg_dark'
+NavicSeparator = 'fg_dark'
+
+[Packer]
+packerString = 'orange'
+packerHash = 'blue'
+packerOutput = 'purple'
+packerRelDate = 'fg_gutter'
+packerSuccess = 'green'
+packerStatusSuccess = 'blue'
+
+[SymbolOutline]
+SymbolsOutlineConnector = 'dark5'
+
+[Notify]
+NotifyERRORBorder = 'error'
+NotifyWARNBorder = 'warning'
+NotifyINFOBorder = 'info'
+NotifyDEBUGBorder = 'comment'
+NotifyTRACEBorder = 'purple'
+
+NotifyERRORIcon = 'error'
+NotifyWARNIcon = 'warning'
+NotifyINFOIcon = 'info'
+NotifyDEBUGIcon = 'comment'
+NotifyTRACEIcon = 'purple'
+
+NotifyERRORTitle = 'error'
+NotifyWARNTitle = 'warning'
+NotifyINFOTitle = 'info'
+NotifyDEBUGTitle = 'comment'
+NotifyTRACETitle = 'purple'
+
+NotifyERRORBody = 'fg bg'
+NotifyWARNBody = 'fg bg'
+NotifyINFOBody = 'fg bg'
+NotifyDEBUGBody = 'fg bg'
+NotifyTRACEBody = 'fg bg'
+
+[TreesitterContext]
+TreesitterContext = '- bg_dark'
+
+[Hop]
+HopNextKey = 'magenta2'
+HopNextKey1 = 'blue2'
+HopNextKey2 = '#164a5b'
+HopUnmatched = 'dark3'
+HopPreview = '#c7ba7d'
+
+[Crates]
+CratesNvimLoading = 'info'
+CratesNvimVersion = 'info'

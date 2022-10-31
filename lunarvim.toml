@@ -238,8 +238,8 @@ Underlined = '- - u'
 
 '@storageclass' = 'link:StorageClass'
 '@attribute' = 'link:PreProc'
-'@field' = 'link:Identifier'
-'@property' = 'link:Identifier'
+'@field' = 'green1'
+'@property' = 'green1'
 
 # Identifiers
 '@variable' = 'link:Variable'

@@ -89,7 +89,7 @@ theme.set_highlights = function()
   hl(0, "Macro", { fg = c.purple, bg = 'NONE' })
   hl(0, "Include", { fg = c.purple, bg = 'NONE' })
   hl(0, "PreCondit", { fg = c.purple, bg = 'NONE' })
-  hl(0, "Type", { fg = c.yellow2, bg = 'NONE' })
+  hl(0, "Type", { fg = c.yellow, bg = 'NONE' })
   hl(0, "StorageClass", { fg = c.blue1, bg = 'NONE' })
   hl(0, "Structure", { fg = c.blue1, bg = 'NONE' })
   hl(0, "Typedef", { fg = c.blue1, bg = 'NONE' })
@@ -368,7 +368,7 @@ theme.set_highlights = function()
   -- IndentBlankline
   hl(0, "IndentBlanklineContextChar", { fg = c.dark5, bg = 'NONE' })
   hl(0, "IndentBlanklineContextStart", { fg = 'NONE', bg = 'NONE', underline=true, })
-  hl(0, "IndentBlanklineChar", { fg = c.dark5, bg = 'NONE' })
+  hl(0, "IndentBlanklineChar", { fg = c.fg_gutter, bg = 'NONE' })
 
   -- Bookmarks
   hl(0, "BookmarkSign", { fg = c.gitsigns_change, bg = 'NONE' })

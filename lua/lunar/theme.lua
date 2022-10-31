@@ -173,9 +173,9 @@ theme.set_highlights = function()
   hl(0, "@text.note", { link = 'SpecialComment' })
   hl(0, "@text.warning", { link = 'Todo' })
   hl(0, "@text.danger", { link = 'WarningMsg' })
-  hl(0, "@tag", { link = 'Label' })
+  hl(0, "@tag", { link = 'Tag' })
   hl(0, "@tag.attribute", { link = 'Identifier' })
-  hl(0, "@tag.delimeter", { fg = c.dark5, bg = 'NONE' })
+  hl(0, "@tag.delimiter", { fg = c.dark5, bg = 'NONE' })
 
   -- markdown
   hl(0, "markdownBlockquote", { fg = c.orange, bg = 'NONE' })

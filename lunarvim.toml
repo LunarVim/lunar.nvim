@@ -275,9 +275,9 @@ Underlined = '- - u'
 # '@text.diff.delete' = 'link:Error'
 
 # Tags
-'@tag' = 'link:Label'
+'@tag' = 'link:Tag'
 '@tag.attribute' = 'link:Identifier'
-'@tag.delimeter' = 'dark5'
+'@tag.delimiter' = 'dark5'
 
 # Conceal
 # '@conceal' = 'link:Comment'

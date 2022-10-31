@@ -215,7 +215,7 @@ Underlined = '- - u'
 '@method.call' = 'link:Function'
 
 '@constructor' = 'link:Special'
-'@parameter' = 'link:Identifier'
+'@parameter' = 'yellow'
 
 # Keywords
 '@keyword' = 'link:Keyword'

@@ -1,0 +1,2 @@
+# lunar.nvim
+LunarVim Colorscheme
